@@ -4,7 +4,17 @@ function getRandomHexColor() {
         .padStart(6, 0)}`;
 }
 
+const bodyElem = document.querySelector("body");
+const btnElem = document.querySelector(".js-change-color");
+const spanElem = document.querySelector(".js-color");
 
+btnElem.addEventListener("click", onBtnColor)
+
+function onBtnColor() {
+    const color = getRandomHexColor();
+    bodyElem.style.backgroundColor = color;
+    spanElem.textContent = `${color}`;
+}
 // Напиши скрипт, який змінює колір фону елемента < body > через інлайн - стиль по кліку на button.change - color і задає це значення кольору текстовим вмістом для span.color.
 
 

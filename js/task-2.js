@@ -28,7 +28,7 @@ const images = [
         alt: 'Zebras on Zebra',
     },
 ];
-const galleryElem = document.querySelector('.gallery');
+const galleryElem = document.querySelector('.js-gallery');
 
 function imageTemplate(image) {
     return `<li>
