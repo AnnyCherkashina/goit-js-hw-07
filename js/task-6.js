@@ -13,7 +13,7 @@ const boxElem = document.querySelector('#boxes')
 function createBoxes(amount) {
     const markup = [];
 
-    for (let i = 1; i <= amount; i++) {
+    for (let i = 0; i <= amount; i++) {
         const backgroundColor = getRandomHexColor();
         const boxCreate = `<div style="background-color: ${backgroundColor}; height: ${30 + i * 10}px; width: ${30 + i * 10}px"></div>`
         markup.push(boxCreate);

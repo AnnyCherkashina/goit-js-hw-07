@@ -12,6 +12,6 @@ categoriesList.forEach(item => {
     const itemsCategories = item.querySelectorAll(`li`);
     const numberOfItemsCategories = itemsCategories.length;
 
-    console.log(`Elemens: ${numberOfItemsCategories}`);
+    console.log(`Elements: ${numberOfItemsCategories}`);
 });
 
